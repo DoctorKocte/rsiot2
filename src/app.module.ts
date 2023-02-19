@@ -9,12 +9,12 @@ import { People } from './typeorm/entities/People';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
-    type: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    username: 'postgres',
-    password: '6675',
-    database: 'TicketsPeoplesLab1',
+    type: 'mysql',
+    host: '35.228.42.189',
+    username: 'root',
+    password: '123456',
+    port:3306,
+    database:'TicketsPeoples',
     entities: [Ticket, People],
     synchronize: true,
   }), TicketsModule, PeoplesModule,
